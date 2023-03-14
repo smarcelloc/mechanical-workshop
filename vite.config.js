@@ -5,6 +5,6 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
     plugins: [
         vue(),
-        laravel({ input: ['resources/main.js'] }),
+        laravel({ input: ['resources/main.ts'] }),
     ],
 });
