@@ -7,4 +7,8 @@ export default defineConfig({
         vue(),
         laravel({ input: ['resources/main.ts'] }),
     ],
+    base: "./",
+    resolve: {
+        alias: { "@": "resources/" }
+    }
 });
