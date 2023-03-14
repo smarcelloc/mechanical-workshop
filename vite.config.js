@@ -5,10 +5,10 @@ import vue from '@vitejs/plugin-vue';
 export default defineConfig({
     plugins: [
         vue(),
-        laravel({ input: ['resources/main.ts'] }),
+        laravel({ input: ['resources/main.ts'] })
     ],
-    base: "./",
+    base: './',
     resolve: {
-        alias: { "@": "resources/" }
+        alias: { '@': 'resources/' }
     }
 });

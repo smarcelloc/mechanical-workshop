@@ -1,5 +1,5 @@
-import { createApp } from "vue";
-import AppRoot from "@/App.vue";
+import { createApp } from 'vue';
+import AppRoot from '@/App.vue';
 
 const app = createApp(AppRoot);
 app.mount('#app');
