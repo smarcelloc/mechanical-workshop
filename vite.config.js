@@ -5,8 +5,8 @@ import { quasar, transformAssetUrls } from '@quasar/vite-plugin';
 
 export default defineConfig({
     plugins: [
-        quasar(),
         vue({ template: transformAssetUrls }),
+        quasar({ sassVariables: 'resources/scss/quasar-overrides.scss' }),
         laravel({ input: ['resources/main.ts'] })
     ],
     base: './',
