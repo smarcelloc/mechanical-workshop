@@ -7,10 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ config('app.name') }}</title>
     <base href="{{ config('app.url') }}">
+    @vite('resources/main.js')
 </head>
 
 <body>
-    <div class="app"></div>
+    <div id="app"></div>
 </body>
 
 </html>

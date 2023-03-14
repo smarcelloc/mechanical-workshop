@@ -36,7 +36,9 @@
             "@php artisan vendor:publish --tag=laravel-assets --ansi --force"
         ],
         "post-install-cmd": [
-            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
+            "npm install",
+            "npm run build"
         ]
     },
     "extra": {
