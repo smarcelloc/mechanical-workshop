@@ -39,7 +39,8 @@
             "@php -r \"file_exists('.env') || copy('.env.example', '.env');\"",
             "npm install",
             "npm run build"
-        ]
+        ],
+        "lint": "pint --ansi"
     },
     "extra": {
         "laravel": {
