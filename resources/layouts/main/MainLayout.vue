@@ -8,9 +8,7 @@
                     <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-black.svg">
                 </q-avatar>
                 <q-toolbar-title>Mechanical Workshop</q-toolbar-title>
-                <q-btn flat dense round>
-                    <q-avatar size="2rem" color="primary" text-color="white" class="cursor-pointer">J</q-avatar>
-                </q-btn>
+                <menu-profile />
             </q-toolbar>
         </q-header>
 
@@ -28,6 +26,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue';
+import MenuProfile from './MenuProfile.vue';
 
 const drawerOpen = ref(false);
 const drawerMini = ref(true);
